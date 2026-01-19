@@ -1,0 +1,67 @@
+body {
+    background-image: url("end road trees.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+#wrapper {
+
+    background-color: rgba(227, 227, 227, 0.696);
+    width: 600px;
+    margin: auto;
+    padding: 0px;
+
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+}
+
+
+.video {
+
+    text-align: center;
+}
+
+.img1 {
+
+    width: 600px;
+}
+
+.para {
+    text-align: center;
+}
+
+.img2 {
+    text-align: center;
+    max-width: 600px;
+
+}
+
+.boyz-container {
+    display: flex;
+    align-items: center;
+    /* vertically aligns items */
+    justify-content: center;
+    /* centers horizontally */
+    gap: 20px;
+    /* space between image and link */
+    margin: 20px 0;
+    flex-wrap: wrap;
+    /* allows wrapping on small screens */
+}
+
+.boyz-link {
+    font-size: 1.2rem;
+    color: #0000EE;
+    /* default link color */
+    text-decoration: underline;
+}
