@@ -1,0 +1,124 @@
+body {
+    background-image: url("tropical.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#animatediv {
+    color: rgb(7, 7, 7);
+    font-size: 60px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    animation: back-ani 15s linear;
+}
+
+@keyframes back-ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+
+#slide1 {
+
+    position: absolute;
+    top: 0;
+    left: 65%;
+    width: 500px;
+    height: 500px;
+
+    opacity: .8;
+
+    animation: slide1-ani 10s linear;
+}
+
+
+
+@keyframes slide1-ani {
+    0% {
+        opacity: .5;
+        left: 800px;
+    }
+
+
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+
+
+#slide2 {
+
+    position: absolute;
+    top: 0;
+    right: 65%;
+    width: 70%;
+    height: 500px;
+
+    opacity: .8;
+    transform: scaleX(-1);
+
+    animation: slide2-ani 10s linear;
+}
+
+@keyframes slide2-ani {
+    0% {
+        opacity: .5;
+        left: 0px;
+    }
+
+
+
+    100% {
+        opacity: 1.0;
+        left: 800px;
+    }
+}
+
+#slide2:hover img {
+    transform: rotate(360deg);
+}
+
+.image-box {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+}
+
+.img {
+    position: absolute;
+    width: 600px;
+    height: 650px;
+    border: 5px solid blue;
+    border-color: rgba(116, 116, 252, 0.24);
+    object-fit: cover;
+    transition: opacity 1s ease;
+}
+
+.img2 {
+    opacity: 0;
+}
+
+.image-box:hover .img2 {
+    opacity: 1;
+}
+
+.image-box:hover .img1 {
+    opacity: 0;
+}
