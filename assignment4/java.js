@@ -1,5 +1,9 @@
 // //detect if game is played on mobile or not
-let isMobile = false;
+let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) {
+    // This is an iPad running iPadOS 13+
+    isMobile = true;
+}
 
 let collectibles = [];
 let numCollectibles = 15;
@@ -60,11 +64,7 @@ function preload() {
 
 function setup() {
 
-    isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) {
-        // This is an iPad running iPadOS 13+
-        isMobile = true;
-    }
+
     createCanvas(500, 300);
     textSize(25);
     playerPos = createVector(200, 200);
