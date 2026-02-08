@@ -518,10 +518,10 @@ function scaleGame() {
     const gameHeight = 300;  // original canvas height
     const padding = 20;      // optional padding from window edges
 
-    // Compute scale factor so the game fits inside the window
+
     const scaleX = (window.innerWidth - padding) / gameWidth;
     const scaleY = (window.innerHeight - padding - 100) / gameHeight; // 100px for text above
-    const scale = Math.min(scaleX, scaleY, 1);  // don't scale above 1
+    const scale = Math.min(scaleX, scaleY, 2.5);  // don't scale above 1.5
 
     container.style.transform = `scale(${scale})`;
 }
