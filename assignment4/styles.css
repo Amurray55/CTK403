@@ -3,7 +3,9 @@ body {
     background-color: rgb(5, 123, 186);
     margin: 0;
     padding: 0;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
