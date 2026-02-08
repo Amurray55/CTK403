@@ -66,7 +66,7 @@ function setup() {
 
 
     let cnv = createCanvas(500, 300);
-    cnv.id('canvas1');
+    cnv.parent('canvas1');
     textSize(25);
     playerPos = createVector(200, 200);
 
