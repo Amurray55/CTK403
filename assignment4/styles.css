@@ -19,8 +19,8 @@ body {
     position: relative;
     display: inline-block;
 
-    transform: scale(2.5);
+    transform: scale(1.5);
 
-    transform-origin: center;
+    transform-origin: top center;
 
 }
