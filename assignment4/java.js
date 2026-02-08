@@ -509,9 +509,9 @@ function stopAllSongs() {
     }
 }
 
-function windowResized() {
-    resizeCanvas(500, 300);
-}
+// function windowResized() {
+//     resizeCanvas(500, 300);
+// }
 
 function handleMovementInput() {
     if (!playerPos) return;
