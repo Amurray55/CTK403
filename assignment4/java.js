@@ -65,7 +65,8 @@ function preload() {
 function setup() {
 
 
-    createCanvas(500, 300);
+    let cnv = createCanvas(500, 300);
+    cnv.id('canvas1');
     textSize(25);
     playerPos = createVector(200, 200);
 
