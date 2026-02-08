@@ -513,7 +513,7 @@ function stopAllSongs() {
 }
 
 function scaleGame() {
-    const container = document.getElementById('game-container');
+    const container = document.getElementById('canvas1');
     const gameWidth = 500;   // original canvas width
     const gameHeight = 300;  // original canvas height
     const padding = 20;      // optional padding from window edges
