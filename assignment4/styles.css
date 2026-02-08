@@ -3,10 +3,7 @@ body {
     background-color: rgb(148, 214, 249);
     margin: 0;
     padding: 0;
-    display: flex;
-    /* center vertically and horizontally */
-    justify-content: center;
-    align-items: center;
+
 }
 
 
@@ -18,6 +15,6 @@ body {
 #canvas1 {
     width: 500px;
     height: 300px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    /* subtle shadow */
+
+
 }
