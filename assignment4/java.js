@@ -82,10 +82,12 @@ function setup() {
     }
 
     soundButton = createButton("🔇");
+    soundButton.parent('canvas1');
     soundButton.position(20, height - 40);
     soundButton.mousePressed(toggleSound);
 
     pauseButton = createButton("⏸ Pause");
+    pauseButton.parent('canvas1');
     pauseButton.position(width - 90, 10);
     pauseButton.mousePressed(togglePause);
     pauseButton.hide();
@@ -101,6 +103,7 @@ function setup() {
     //});
 
     startButton = createButton("Click to EAT!");
+    startButton.parent('canvas1');
     startButton.position(width / 3, 250);
     startButton.mousePressed(() => {
         state = 6; // go to instructions screen first
