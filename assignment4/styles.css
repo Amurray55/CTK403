@@ -1,14 +1,22 @@
 html,
 body {
-    background-color: blue;
+    background-color: rgb(148, 214, 249);
     margin: 0;
     padding: 0;
+    display: flex;
+    /* center vertically and horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
 canvas {
     display: block;
 
 
+}
+
+#game-wrapper {
+    text-align: center;
 }
 
 #canvas1 {
