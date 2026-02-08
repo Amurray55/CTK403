@@ -5,7 +5,9 @@ body {
     padding: 0;
 }
 
-canvas1 {
+canvas {
     display: block;
-    text-align: center;
+    margin: 50px auto;
+    border: 2px solid black;
+
 }
