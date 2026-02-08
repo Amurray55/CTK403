@@ -510,7 +510,7 @@ function stopAllSongs() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(500, 300);
 }
 
 function handleMovementInput() {
