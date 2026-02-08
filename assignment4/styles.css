@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: rgb(5, 126, 49);
+    background-color: rgb(23, 5, 126);
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,8 +15,9 @@ body {
 }
 
 #canvas1 {
-    width: 500px;
-    height: 300px;
+    position: relative;
 
+
+    display: inline-block;
 
 }
