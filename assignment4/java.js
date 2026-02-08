@@ -1,9 +1,9 @@
 // //detect if game is played on mobile or not
-// let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-// if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) {
-//     // This is an iPad running iPadOS 13+
-//     isMobile = true;
-// }
+let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) {
+    // This is an iPad running iPadOS 13+
+    isMobile = true;
+}
 
 let collectibles = [];
 let numCollectibles = 15;
