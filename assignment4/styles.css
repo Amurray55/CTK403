@@ -12,12 +12,15 @@ body {
 
 #game-wrapper {
     text-align: center;
+    display: inline-block;
 }
 
 #canvas1 {
     position: relative;
-
-
     display: inline-block;
+
+    transform: scale(1.5);
+
+    transform-origin: top left;
 
 }
