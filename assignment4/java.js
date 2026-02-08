@@ -512,9 +512,22 @@ function stopAllSongs() {
     }
 }
 
-// function windowResized() {
-//     resizeCanvas(500, 300);
-// }
+function scaleGame() {
+    const container = document.getElementById('game-container');
+    const gameWidth = 500;   // original canvas width
+    const gameHeight = 300;  // original canvas height
+    const padding = 20;      // optional padding from window edges
+
+    // Compute scale factor so the game fits inside the window
+    const scaleX = (window.innerWidth - padding) / gameWidth;
+    const scaleY = (window.innerHeight - padding - 100) / gameHeight; // 100px for text above
+    const scale = Math.min(scaleX, scaleY, 1);  // don't scale above 1
+
+    container.style.transform = `scale(${scale})`;
+}
+// Call on load and window resize
+window.addEventListener('load', scaleGame);
+window.addEventListener('resize', scaleGame);
 
 function handleMovementInput() {
     if (!playerPos) return;
