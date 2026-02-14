@@ -1,0 +1,191 @@
+body {
+    background-image: url("end road trees.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    background-color: azure;
+
+}
+
+h2 {
+
+    text-align: center;
+}
+
+.video {
+
+    text-align: center;
+
+}
+
+
+
+.para {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.para2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.boyz-container {
+    display: flex;
+    align-items: center;
+    /* vertically aligns items */
+    justify-content: center;
+    /* centers horizontally */
+    gap: 1rem;
+    /* space between image and link */
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    /* allows wrapping on small screens */
+}
+
+.boyz-link {
+    font-size: 1.2rem;
+    color: #0000EE;
+    /* default link color */
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    background-color: rgba(126, 225, 172, 0.696);
+}
+
+.content-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* mobile default */
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.content-row img {
+    width: 100%;
+}
+
+@media all and (max-width: 480px) {
+
+
+
+    main {
+        width: 100vw;
+        /* full viewport width */
+        margin: 0;
+        /* remove any spacing */
+        padding: 0;
+        /* remove any inner spacing */
+        box-sizing: border-box;
+        /* ensures padding doesn't add extra width */
+    }
+
+
+}
+
+@media all and (min-width: 30rem) {
+
+
+    h1 {
+        color: rgb(205, 0, 0);
+
+
+
+    }
+
+
+
+
+
+    .boyz-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media all and (min-width: 40rem) {
+    h1 {
+        color: blue;
+    }
+
+
+
+    .content-row {
+        grid-template-columns: 1fr 1fr;
+        /* image left, text right */
+    }
+
+    .para2 {
+        grid-column: span 2fr;
+    }
+
+    .boyz-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media all and (min-width: 60rem) {
+    h1 {
+        color: rgb(85, 0, 85);
+        text-align: center;
+    }
+
+
+
+    .content-row {
+
+        grid-template-columns: repeat(1, 3fr);
+        grid-column-gap: 3rem;
+    }
+
+    .para2 {
+        grid-column: span 2;
+    }
+
+    .video {
+        grid-column: span 2;
+    }
+
+    .content-row img {
+
+        max-width: 500px;
+        width: 100%;
+        margin: 1rem auto;
+
+
+    }
+
+
+    .boyz-container {
+        grid-column: span 2;
+        margin: 2rem;
+    }
+
+
+    body {
+        max-width: 1000px;
+        margin: 0rem auto;
+    }
+}
