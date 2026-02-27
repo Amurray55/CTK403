@@ -8,7 +8,7 @@ body {
 }
 
 
-/*#wrapper {
+#wrapper {
 
     background-color: rgba(227, 227, 227, 0.696);
     width: 600px;
@@ -17,7 +17,7 @@ body {
 
 
 
-}*/
+}
 
 h1 {
     text-align: center;
@@ -66,3 +66,4 @@ h1 {
     text-decoration: underline;
 
 }
+
